@@ -1,7 +1,7 @@
 .quickproxy-status-on {
-  list-style-image: url("chrome://quickproxy/skin/button_on.png");
+  list-style-image: url("chrome://quickproxy/skin/quickproxyOn.png");
 }
 
 .quickproxy-status-off {
-  list-style-image: url("chrome://quickproxy/skin/button_off.png");
+  list-style-image: url("chrome://quickproxy/skin/quickproxyOff.png");
 }

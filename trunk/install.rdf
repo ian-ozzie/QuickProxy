@@ -3,11 +3,12 @@
   <Description about="urn:mozilla:install-manifest">
     <em:name>QuickProxy</em:name>
     <em:id>{d5ea4520-61a1-11da-8cd6-0800200c9a66}</em:id>
-    <em:version>2005.12.04</em:version>
+    <em:version>2006.05.26</em:version>
     <em:creator>Ozzie</em:creator>
-    <em:iconURL>chrome://quickproxy/content/quickproxy.png</em:iconURL>
+    <em:iconURL>chrome://quickproxy/skin/quickproxyAbout.png</em:iconURL>
+    <em:optionsURL>chrome://quickproxy/content/quickproxySettings.xul</em:optionsURL>
     <em:description>Quickproxy creates a statusbar button to quickly turn the proxy on and off.</em:description>
-    <em:homepageURL>http://ozzie.no-ip.info/?p=quickproxy</em:homepageURL>
+    <em:contributor>Daniel L. Snider (Status Images)</em:contributor>
     <em:file>
       <Description about="urn:mozilla:extension:file:quickproxy.jar">
         <em:package>content/quickproxy/</em:package>
@@ -20,7 +21,7 @@
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
         <em:minVersion>1.0</em:minVersion>
-        <em:maxVersion>1.5</em:maxVersion>
+        <em:maxVersion>1.6</em:maxVersion>
       </Description>
     </em:targetApplication>
   </Description>

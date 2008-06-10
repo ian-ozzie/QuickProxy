@@ -2,7 +2,7 @@
 <?xml-stylesheet href="chrome://quickproxy/skin/quickproxy.css" type="text/css"?> 
 <!DOCTYPE overlay SYSTEM "chrome://quickproxy/locale/quickproxy.dtd">
 <overlay id="quickproxyOverlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
-  <script type="application/x-javascript" src="chrome://quickproxy/content/functions.js"/>
+  <script type="application/x-javascript" src="chrome://quickproxy/content/quickproxyFunctions.js"/>
   <script language="JavaScript">
     try{window.addEventListener("load", QuickProxy_Init, false);}catch(e){}
   </script>

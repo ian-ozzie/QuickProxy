@@ -1,19 +1,22 @@
 @ECHO Off
 SET b=%cd%
 echo ---
-echo Clearing temporary directory:
-del /F /Q /S tmp\*.*
+echo Clearing temporary directory
+del /Q tmp\*.*
+echo Clearing temporary chrome directory
+del /Q tmp\chrome\*.*
+echo Temporary directories should be clear
 echo ---
 echo Archiving quickproxy.jar:
-cd %b%\..\trunk\chrome\quickproxy\
-%b%\7za.exe a -tzip -mx=0 %b%\tmp\chrome\quickproxy.jar *
+cd %b%\..\release\src\chrome\quickproxy\
+%b%\7za.exe a -tzip -mx=0 -xr!.svn %b%\tmp\chrome\quickproxy.jar *
 cd %b%
 echo ---
 echo Copying required files:
-copy ..\trunk\*.* tmp\
+copy ..\release\src\*.* tmp\
 echo ---
-echo Removing previous build:
-del /F /Q /S ..\release\xpi\*.*
+echo Removing previous build
+del /Q ..\release\xpi\*.xpi
 echo ---
 FOR /F "TOKENS=1* DELIMS= " %%A IN ('DATE/T') DO SET CDATE=%%B
 FOR /F "TOKENS=1,2 eol=/ DELIMS=/ " %%A IN ('DATE/T') DO SET mm=%%B
@@ -24,12 +27,13 @@ echo Created release name: %release%
 echo ---
 echo Archiving %release%
 cd %b%\tmp\
-%b%\7za.exe a -tzip %b%\..\release\xpi\%release% *
+%b%\7za.exe a -tzip -xr!.svn %b%\..\release\xpi\%release% *
 cd %b%
 echo ---
 echo Build complete!
 echo ---
 pause
 echo ---
-echo Clearing temporary directory:
-del /F /Q /S tmp\*.*
+echo Clearing temporary directories
+del /Q tmp\*.*
+del /Q tmp\chrome\*.*

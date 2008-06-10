@@ -7,7 +7,7 @@
         onload="QuickProxy_InitPrefs(document.getElementById('quickproxy_type'),document.getElementById('quickproxy_autooff'))"
         ondialogaccept="QuickProxy_SavePrefs(document.getElementById('quickproxy_type'),document.getElementById('quickproxy_autooff'))"
         title="QuickProxy Settings">
-  <html:script language="javascript" src="chrome://quickproxy/content/functions.js" />
+  <html:script language="javascript" src="chrome://quickproxy/content/quickproxyFunctions.js" />
   <caption label="Select the Proxy type:" />
   <hbox style="margin-left: 2em;">
     <radiogroup id="quickproxy_type">
