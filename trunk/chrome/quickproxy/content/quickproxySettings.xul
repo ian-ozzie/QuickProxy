@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://communicator/skin/" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://ietab/locale/ietab.dtd">
+<dialog xmlns:html="http://www.w3.org/1999/xhtml"
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        onload="QuickProxy_InitPrefs(document.getElementById('quickproxy_type'),document.getElementById('quickproxy_autooff'))"
+        ondialogaccept="QuickProxy_SavePrefs(document.getElementById('quickproxy_type'),document.getElementById('quickproxy_autooff'))"
+        title="QuickProxy Settings">
+  <html:script language="javascript" src="chrome://quickproxy/content/functions.js" />
+  <caption label="Select the Proxy type:" />
+  <hbox style="margin-left: 2em;">
+    <radiogroup id="quickproxy_type">
+      <radio value="1" label="Manual Proxy Configuration" />
+      <radio value="2" label="Automatic Configuration" />
+      <radio value="4" label="Auto-Detect Proxy Settings" />
+    </radiogroup>
+  </hbox>
+  <checkbox id="quickproxy_autooff" label="Automatically Turn Off Proxy On Browser Launch" />
+</dialog>
