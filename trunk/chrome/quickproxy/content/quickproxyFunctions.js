@@ -4,15 +4,17 @@ function QuickProxy_Init() {
 	QuickProxy_CheckPrefs();
 	var qp_autooff = qp_Prefs.getBoolPref('quickproxy.autooff');
 	var Is_Proxy_On = qp_Prefs.getIntPref("network.proxy.type");
-	if (Is_Proxy_On!=0) { if (qp_autooff == true) { Is_Proxy_On=0 } }
+	if (Is_Proxy_On!=0) {
+		if (qp_autooff == true) { Is_Proxy_On=0 }
+	}
 	qp_Prefs.setIntPref("network.proxy.type", Is_Proxy_On);
 	QuickProxy_UpdateUI();
 }
 
 function QuickProxy_Click(e) {
-	if (e.button == 0) { QuickProxy_Switch();	 }	// Left   Click
-	if (e.button == 1) { QuickProxy_Switch();	 }	// Middle Click
-	if (e.button == 2) { QuickProxy_OpenPrefs(); }	// Right  Click
+	if (e.button == 0) { QuickProxy_Switch();	}	// Left   Click
+	if (e.button == 1) { QuickProxy_Switch();	}	// Middle Click
+	if (e.button == 2) { QuickProxy_OpenPrefs();	}	// Right  Click
 	e.preventDefault();
 }
 
@@ -53,9 +55,20 @@ function QuickProxy_InitPrefs(qp_type, qp_autooff) {
 function QuickProxy_SavePrefs(qp_type, qp_autooff) {
 	qp_Prefs.setIntPref('quickproxy.type', qp_type.selectedItem.value);
 	qp_Prefs.setBoolPref('quickproxy.autooff', qp_autooff.checked);
+        var Is_Proxy_On = qp_Prefs.getIntPref("network.proxy.type");
+        if (Is_Proxy_On != 0) { qp_Prefs.setIntPref("network.proxy.type", qp_type.selectedItem.value); } 
 }
 
 function QuickProxy_CheckPrefs() {
-	try { qp_Prefs.getIntPref('quickproxy.type'); } catch (rErr) { qp_Prefs.setIntPref('quickproxy.type', 1); }
-	try { qp_Prefs.getBoolPref('quickproxy.autooff'); } catch (rErr) { qp_Prefs.setBoolPref('quickproxy.autooff', 0); }
+	try {
+		qp_Prefs.getIntPref('quickproxy.type');
+	} catch (rErr) {
+		qp_Prefs.setIntPref('quickproxy.type', 1);
+	}
+
+	try {
+		qp_Prefs.getBoolPref('quickproxy.autooff');
+	} catch (rErr) {
+		qp_Prefs.setBoolPref('quickproxy.autooff', 0);
+	}
 }

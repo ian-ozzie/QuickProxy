@@ -5,11 +5,11 @@
   <RDF:Description RDF:about="rdf:#$iYXa"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="1.0"
-                   em:maxVersion="3.0pre" />
+                   em:maxVersion="3.0b5" />
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:name="QuickProxy"
                    em:id="{d5ea4520-61a1-11da-8cd6-0800200c9a66}"
-                   em:version="2008.03.11"
+                   em:version="2008.04.28"
                    em:creator="Ozzie"
                    em:iconURL="chrome://quickproxy/skin/quickproxyAbout.png"
                    em:optionsURL="chrome://quickproxy/content/quickproxySettings.xul"
