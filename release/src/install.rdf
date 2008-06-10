@@ -1,28 +1,25 @@
 <?xml version="1.0"?>
-<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
-  <Description about="urn:mozilla:install-manifest">
-    <em:name>QuickProxy</em:name>
-    <em:id>{d5ea4520-61a1-11da-8cd6-0800200c9a66}</em:id>
-    <em:version>2006.05.26</em:version>
-    <em:creator>Ozzie</em:creator>
-    <em:iconURL>chrome://quickproxy/skin/quickproxyAbout.png</em:iconURL>
-    <em:optionsURL>chrome://quickproxy/content/quickproxySettings.xul</em:optionsURL>
-    <em:description>Quickproxy creates a statusbar button to quickly turn the proxy on and off.</em:description>
-    <em:contributor>Daniel L. Snider (Status Images)</em:contributor>
-    <em:file>
-      <Description about="urn:mozilla:extension:file:quickproxy.jar">
-        <em:package>content/quickproxy/</em:package>
-        <em:skin>skin/</em:skin>
-        <em:locale>locale/en-US/quickproxy/</em:locale>
-      </Description>
-    </em:file>
-    <!-- Firefox -->
-    <em:targetApplication>
-      <Description>
-        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-        <em:minVersion>1.0</em:minVersion>
-        <em:maxVersion>1.6</em:maxVersion>
-      </Description>
-    </em:targetApplication>
-  </Description>
-</RDF>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="rdf:#$iYXa"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="1.0"
+                   em:maxVersion="2.0.0.*" />
+  <RDF:Description RDF:about="urn:mozilla:install-manifest"
+                   em:name="QuickProxy"
+                   em:id="{d5ea4520-61a1-11da-8cd6-0800200c9a66}"
+                   em:version="2006.10.09"
+                   em:creator="Ozzie"
+                   em:iconURL="chrome://quickproxy/skin/quickproxyAbout.png"
+                   em:optionsURL="chrome://quickproxy/content/quickproxySettings.xul"
+                   em:description="Quickproxy creates a statusbar button to quickly turn the proxy on and off."
+                   em:contributor="Daniel L. Snider (Status Images)">
+    <em:file RDF:resource="urn:mozilla:extension:file:quickproxy.jar"/>
+    <em:targetApplication RDF:resource="rdf:#$iYXa"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:extension:file:quickproxy.jar"
+                   em:package="content/quickproxy/"
+                   em:skin="skin/"
+                   em:locale="locale/en-US/quickproxy/" />
+</RDF:RDF>
