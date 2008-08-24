@@ -2,4 +2,4 @@ overlay	chrome://browser/content/browser.xul			chrome://quickproxy/content/quick
 content	quickproxy										jar:chrome/quickproxy.jar!/content/
 skin	quickproxy	classic/1.0							jar:chrome/quickproxy.jar!/skin/
 style	chrome://global/content/customizeToolbar.xul	chrome://quickproxy/skin/quickproxy.css
-locale	quickproxy	en-US								jar:chrome/quickproxy.jar!/locale/en-US/quickproxy/
+locale	quickproxy	en-US								jar:chrome/quickproxy.jar!/locale/en-US/

@@ -1,3 +1,19 @@
+.quickproxy-status-bright-on {
+  list-style-image: url("chrome://quickproxy/skin/quickproxyNewBrightOn.png");
+}
+
+.quickproxy-status-bright-off {
+  list-style-image: url("chrome://quickproxy/skin/quickproxyNewBrightOff.png");
+}
+
+.quickproxy-status-dull-on {
+  list-style-image: url("chrome://quickproxy/skin/quickproxyNewDullOn.png");
+}
+
+.quickproxy-status-dull-off {
+  list-style-image: url("chrome://quickproxy/skin/quickproxyNewDullOff.png");
+}
+
 .quickproxy-status-on {
   list-style-image: url("chrome://quickproxy/skin/quickproxyOn.png");
 }

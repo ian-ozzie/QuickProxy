@@ -1,20 +1,37 @@
 <?xml version="1.0"?>
-<?xml-stylesheet href="chrome://communicator/skin/" type="text/css"?>
-<!DOCTYPE window SYSTEM "chrome://ietab/locale/ietab.dtd">
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://quickproxy/skin/quickproxy.css" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://quickproxy/locale/quickproxySettings.dtd">
 <dialog xmlns:html="http://www.w3.org/1999/xhtml"
         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-        onload="QuickProxy_InitPrefs(document.getElementById('quickproxy_type'),document.getElementById('quickproxy_autooff'))"
-        ondialogaccept="QuickProxy_SavePrefs(document.getElementById('quickproxy_type'),document.getElementById('quickproxy_autooff'))"
-        title="QuickProxy Settings">
-  <html:script language="javascript" src="chrome://quickproxy/content/quickproxyFunctions.js" />
-  <caption label="Select the Proxy type:" />
-  <hbox style="margin-left: 2em;">
-    <radiogroup id="quickproxy_type">
-      <radio value="1" label="Manual Proxy Configuration" />
-      <radio value="2" label="Automatic Configuration" />
-      <radio value="4" label="Auto-Detect Proxy Settings" />
-    </radiogroup>
-  </hbox>
-  <checkbox id="quickproxy_autooff" label="Automatically Turn Off Proxy On Browser Launch" />
+        onload="QuickProxy_InitPrefs(document.getElementById('quickproxy_type'),document.getElementById('quickproxy_behaviour'),document.getElementById('quickproxy_skin'))"
+        ondialogaccept="QuickProxy_SavePrefs(document.getElementById('quickproxy_type'),document.getElementById('quickproxy_behaviour'),document.getElementById('quickproxy_skin'))"
+        title="&quickproxy.prefs.title;">
+		
+   <html:script language="javascript" src="chrome://quickproxy/content/quickproxyFunctions.js" />
+   <groupbox>
+      <caption label="&quickproxy.caption.type;" /> 
+      <radiogroup id="quickproxy_type">
+         <radio value="1" label="&quickproxy.type.manual;" />
+         <radio value="2" label="&quickproxy.type.auto;" />
+         <radio value="4" label="&quickproxy.type.detect;" />
+      </radiogroup>
+   </groupbox>
+   <groupbox>
+      <caption label="&quickproxy.caption.behaviour;" /> 
+      <radiogroup id="quickproxy_behaviour">
+         <radio value="0" label="&quickproxy.behaviour.nothing;" />
+         <radio value="1" label="&quickproxy.behaviour.autooff;" />
+         <radio value="2" label="&quickproxy.behaviour.autoon;" />
+      </radiogroup>
+   </groupbox>
+   <groupbox>
+      <caption label="&quickproxy.caption.style;" />
+      <radiogroup id="quickproxy_skin">
+         <radio value="0" label="&quickproxy.style.icona;" />
+         <radio value="1" label="&quickproxy.style.iconb;" />
+         <radio value="2" label="&quickproxy.style.iconc;" />
+      </radiogroup>
+   </groupbox>
 </dialog>
