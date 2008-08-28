@@ -80,6 +80,10 @@ function QuickProxy_OpenPrefs() {
 	window.openDialog('chrome://quickproxy/content/quickproxySettings.xul', quickproxyprefstitle, 'chrome,centerscreen,dependent');
 }
 
+function QuickProxy_OpenProxyPrefs() {
+	window.openDialog('chrome://browser/content/preferences/connection.xul', quickproxybrowserprefstitle, 'chrome,centerscreen,dependent');
+}
+
 function QuickProxy_InitPrefs(qp_type, qp_behaviour, qp_skin) {
 	QuickProxy_CheckPrefs();
 	var proxyType = qp_Prefs.getIntPref('quickproxy.type')

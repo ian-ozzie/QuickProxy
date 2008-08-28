@@ -9,7 +9,7 @@
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:name="QuickProxy"
                    em:id="{d5ea4520-61a1-11da-8cd6-0800200c9a66}"
-                   em:version="2008.08.24"
+                   em:version="2008.08.28"
                    em:creator="Ozzie"
                    em:iconURL="chrome://quickproxy/skin/quickproxyNewAbout.png"
                    em:optionsURL="chrome://quickproxy/content/quickproxySettings.xul"
