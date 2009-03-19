@@ -1,0 +1,16 @@
+<!ENTITY quickproxy.prefs.title "QuickProxy Eigenschaften">
+
+<!ENTITY quickproxy.caption.type "Proxy-Typ wählen:">
+<!ENTITY quickproxy.type.manual "Manuelle Proxy-Konfiguration">
+<!ENTITY quickproxy.type.auto "Automatische Konfiguration (URL)">
+<!ENTITY quickproxy.type.detect "Automatische Erkennung der Proxy-Einstellungen">
+
+<!ENTITY quickproxy.caption.behaviour "Proxy-Verhalten beim Browserstart:">
+<!ENTITY quickproxy.behaviour.nothing "Letzte Einstellungen">
+<!ENTITY quickproxy.behaviour.autooff "Proxy automatisch deaktivieren">
+<!ENTITY quickproxy.behaviour.autoon "Proxy automatisch aktivieren">
+
+<!ENTITY quickproxy.caption.style "Icon-Design wählen:">
+<!ENTITY quickproxy.style.icona "Eckiges helles Design (Standard)">
+<!ENTITY quickproxy.style.iconb "Eckiges blasses Design">
+<!ENTITY quickproxy.style.iconc "Rundes blasses Design">

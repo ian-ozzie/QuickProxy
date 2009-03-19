@@ -1,0 +1,16 @@
+<!ENTITY quickproxy.prefs.title "QuickProxy 选项">
+
+<!ENTITY quickproxy.caption.type "选择代理服务器类型:">
+<!ENTITY quickproxy.type.manual "手动配置">
+<!ENTITY quickproxy.type.auto "自动配置 (URL)">
+<!ENTITY quickproxy.type.detect "自动检测">
+
+<!ENTITY quickproxy.caption.behaviour "Firefox 启动后:">
+<!ENTITY quickproxy.behaviour.nothing "保持上次的设置">
+<!ENTITY quickproxy.behaviour.autooff "停用代理服务器">
+<!ENTITY quickproxy.behaviour.autoon "启用代理服务器">
+
+<!ENTITY quickproxy.caption.style "选择图标:">
+<!ENTITY quickproxy.style.icona "高亮方形 (默认)">
+<!ENTITY quickproxy.style.iconb "暗淡方形">
+<!ENTITY quickproxy.style.iconc "暗淡圆形 (旧式)">

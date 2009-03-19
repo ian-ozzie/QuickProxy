@@ -1,0 +1,16 @@
+<!ENTITY quickproxy.prefs.title "QuickProxy Параметри">
+
+<!ENTITY quickproxy.caption.type "Избери го типот на Прокси:">
+<!ENTITY quickproxy.type.manual "Рачна Конфигурација на Прокси">
+<!ENTITY quickproxy.type.auto "Автоматска Конфигурација (URL)">
+<!ENTITY quickproxy.type.detect "Авто детектирај ги поставувањата на прокси">
+
+<!ENTITY quickproxy.caption.behaviour "Прокси однесување при стартување на прелистувачот:">
+<!ENTITY quickproxy.behaviour.nothing "Остави го како што беше предходно поставено">
+<!ENTITY quickproxy.behaviour.autooff "Автоматски исклучи го прокси">
+<!ENTITY quickproxy.behaviour.autoon "Автоматски вклучи го прокси">
+
+<!ENTITY quickproxy.caption.style "Избери икони:">
+<!ENTITY quickproxy.style.icona "Светол квадрат (зададено)">
+<!ENTITY quickproxy.style.iconb "Матен квадрат">
+<!ENTITY quickproxy.style.iconc "Матен тркалезен (Стар)">
