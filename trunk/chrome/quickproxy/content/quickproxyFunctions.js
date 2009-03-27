@@ -1,15 +1,10 @@
-const QuickProxy = {
+var QuickProxy = {
    // Set up preference vars, prefs ver, prefs component, and prefs branch
    prefsVer: 3,
    prefsCom: Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch),
    prefsBranch: Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService).getBranch("extensions.quickproxy.").QueryInterface(Components.interfaces.nsIPrefBranch2),
-   // Set up language bundle, and vars,
-   langBundle: Components.classes["@mozilla.org/intl/stringbundle;1"].getService(Components.interfaces.nsIStringBundleService),
-   langStrings: this.langBundle.createBundle("chrome://quickproxy/locale/quickproxyFunctions.properties"),
-   lang_prefs_title: this.langStrings.GetStringFromName("quickproxy_prefs_title"),
-   lang_prefs_browser_title: this.langStrings.GetStringFromName("quickproxy_prefs_browser_title"),
-   lang_status_on: this.langStrings.GetStringFromName("quickproxy_status_on"),
-   lang_status_off: this.langStrings.GetStringFromName("quickproxy_status_off"),
+   // Set up language bundle
+   langStrings: Components.classes["@mozilla.org/intl/stringbundle;1"].getService(Components.interfaces.nsIStringBundleService).createBundle("chrome://quickproxy/locale/quickproxyFunctions.properties"),
 
    // Called on browser load
    onLoad : function() {
@@ -17,6 +12,12 @@ const QuickProxy = {
       this.prefsInit();
       // Update icon to reflect current status
       this.updateIcon();
+
+      // Init Lang vars
+      this.lang_prefs_title = this.langStrings.GetStringFromName("quickproxy_prefs_title");
+      this.lang_prefs_browser_title = this.langStrings.GetStringFromName("quickproxy_prefs_browser_title");
+      this.lang_status_on = this.langStrings.GetStringFromName("quickproxy_status_on");
+      this.lang_status_off = this.langStrings.GetStringFromName("quickproxy_status_off");
    
       // Init window management
       var wManager = Components.classes['@mozilla.org/appshell/window-mediator;1'].getService(Components.interfaces.nsIWindowMediator);
@@ -49,7 +50,7 @@ const QuickProxy = {
    // Called on browser focus
    onFocus : function() {
       // Delay icon update by 50ms
-      window.setTimeout("quickproxy.updateIcon()", 50);
+      window.setTimeout("QuickProxy.updateIcon()", 50);
    },
 
    // Update the icon on the status bar
@@ -60,6 +61,7 @@ const QuickProxy = {
       var proxySkin = this.prefsBranch.getIntPref("skin");
       // Grab proxy icon
       var proxyButton = document.getElementById("quickproxy-status");
+      if (this.debug==true) { alert(proxyButton); }
       if (proxyOn==0) {
          // If proxy is off, update graphic with disabled status
          proxyButton.setAttribute("tooltiptext", this.lang_status_off);
@@ -161,6 +163,8 @@ const QuickProxy = {
       var proxyOn = this.prefsCom.getIntPref("network.proxy.type");
       // If the proxy is on, update it to the proxy type selected.
       if (proxyOn != 0) { this.prefsCom.setIntPref("network.proxy.type", objectType.selectedItem.value); } 
+      
+      this.debug = true;
    },
 
    // Check for existing preferences and initiate if they aren't found

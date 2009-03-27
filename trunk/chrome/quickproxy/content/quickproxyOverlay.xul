@@ -3,7 +3,7 @@
 <!DOCTYPE overlay SYSTEM "chrome://quickproxy/locale/quickproxyOverlay.dtd">
 <overlay id="quickproxyOverlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
    <script type="application/x-javascript" src="chrome://quickproxy/content/quickproxyFunctions.js"/>
-   <script>
+   <script language="JavaScript">
       window.addEventListener("load", function() { QuickProxy.onLoad(); }, false);
       window.addEventListener("focus", function() { QuickProxy.onFocus(); }, false);
    </script>
