@@ -1,47 +1,37 @@
 <?xml version="1.0"?>
-<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
-         xmlns:NC="http://home.netscape.com/NC-rdf#"
-         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <RDF:Description RDF:about="rdf:#$iYXa"
-                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
-                    em:minVersion="1.0"
-                    em:maxVersion="3.1b3" />
-   <RDF:Description RDF:about="urn:mozilla:install-manifest"
-                    em:name="QuickProxy"
-                    em:id="{d5ea4520-61a1-11da-8cd6-0800200c9a66}"
-                    em:version="2009.19.03"
-                    em:extension="true"
-                    em:type="2"
-                    em:creator="Ozzie"
-                    em:iconURL="chrome://quickproxy/skin/quickproxyNewAbout.png"
-                    em:optionsURL="chrome://quickproxy/content/quickproxySettings.xul"
-                    em:description="Quickproxy creates a statusbar icon to quickly turn the proxy on and off.">
-      <em:contributor>BabelZilla.org (Translations)</em:contributor>
-      <em:contributor>Mohammed Al-foulad (Arabic Translation)</em:contributor>
-      <em:contributor>osterlaus (German Translation)</em:contributor>
-      <em:contributor>Pierre Rudloff (French Translation)</em:contributor>
-      <em:contributor>drry (Japanese Translation)</em:contributor>
-      <em:contributor>Leszek (teo) Zyczkowski (Polish Translation)</em:contributor>
-      <em:contributor>Ali Akin Kurnaz (Turkish Translation)</em:contributor>
-      <em:contributor>smoke (Chinese (Simplified) Translation)</em:contributor>
-      <em:contributor>Daniel L. Snider (Status Images)</em:contributor>>
-      <em:file RDF:resource="urn:mozilla:extension:file:quickproxy.jar"/>
-      <em:targetApplication RDF:resource="rdf:#$iYXa"/>
-   </RDF:Description>
-   <RDF:Description RDF:about="urn:mozilla:extension:file:quickproxy.jar"
-                    em:package="content/quickproxy/"
-                    em:skin="skin/" />
-      <em:locale>locale/en-US/quickproxy/</em:locale>
 
-      <em:locale>locale/ar/quickproxy/</em:locale>
-      <em:locale>locale/cs-CZ/quickproxy/</em:locale>
-      <em:locale>locale/de-DE/quickproxy/</em:locale>
-      <em:locale>locale/fr-FR/quickproxy/</em:locale>
-      <em:locale>locale/ja-JP/quickproxy/</em:locale>
-      <em:locale>locale/pl-PL/quickproxy/</em:locale>
-      <em:locale>locale/pt-BR/quickproxy/</em:locale>
-      <em:locale>locale/tr-TR/quickproxy/</em:locale>
-      <em:locale>locale/uk-UA/quickproxy/</em:locale>
-      <em:locale>locale/zh-CN/quickproxy/</em:locale>
-      <em:locale>locale/zh-TW/quickproxy/</em:locale>
-</RDF:RDF>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+   <Description about="urn:mozilla:install-manifest">
+      <em:id>{d5ea4520-61a1-11da-8cd6-0800200c9a66}</em:id>
+      <em:version>2009.03.26</em:version>
+      <em:type>2</em:type>
+
+      <!-- Firefox -->
+      <em:targetApplication>
+         <Description>
+            <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+            <em:minVersion>1.0</em:minVersion>
+            <em:maxVersion>3.1b3</em:maxVersion>
+         </Description>
+      </em:targetApplication>
+
+      <em:name>QuickProxy</em:name>
+      <em:description>Quickproxy creates a statusbar icon to quickly turn the proxy on and off.</em:description>
+      <em:creator>Ian Oswald</em:creator>
+      <em:contributor>Daniel L. Snider (Status Images)</em:contributor>
+      <em:iconURL>chrome://quickproxy/skin/quickproxyNewAbout.png</em:iconURL>
+      <em:optionsURL>chrome://quickproxy/content/quickproxySettings.xul</em:optionsURL>
+      <em:homepageURL>http://projects.ozzie.id.au/</em:homepageURL>
+
+      <em:translator>BabelZilla.org (Community)</em:translator>
+      <em:translator>Pierre Rudloff (fr-FR)</em:translator>
+      <em:translator>markh (nl-NL)</em:translator>
+      <em:translator>Leszek(teo)Życzkowski (pl-PL)</em:translator>
+      <em:translator>smoke (zh-CH)</em:translator>
+      <em:translator>Humberto Sartini (pt-BR)</em:translator>
+      <em:translator>Пирятинский Виталий (ru-RU)</em:translator>
+
+   </Description>
+</RDF>

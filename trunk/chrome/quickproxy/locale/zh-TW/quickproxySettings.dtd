@@ -1,16 +1,14 @@
 <!ENTITY quickproxy.prefs.title "QuickProxy 偏好設定">
-
-<!ENTITY quickproxy.caption.type "選擇代理伺服器類型:">
-<!ENTITY quickproxy.type.manual "手動設置">
-<!ENTITY quickproxy.type.auto "自動設置(URL)">
-<!ENTITY quickproxy.type.detect "自動檢測">
-
+<!ENTITY quickproxy.caption.type "選擇代理伺服器 (Proxy) 類型:">
+<!ENTITY quickproxy.type.manual "手動設定 Proxy">
+<!ENTITY quickproxy.type.auto "Proxy 自動設定網址 (URL)">
+<!ENTITY quickproxy.type.detect "自動偵測此網路的 Proxy 設定">
 <!ENTITY quickproxy.caption.behaviour "瀏覽器啟動後:">
 <!ENTITY quickproxy.behaviour.nothing "保持原來設定">
-<!ENTITY quickproxy.behaviour.autooff "停用代理伺服器">
-<!ENTITY quickproxy.behaviour.autoon "啟用代理伺服器">
-
-<!ENTITY quickproxy.caption.style "選擇圖標:">
+<!ENTITY quickproxy.behaviour.autooff "自動停用代理伺服器">
+<!ENTITY quickproxy.behaviour.autoon "自動啟用代理伺服器">
+<!ENTITY quickproxy.caption.style "選擇圖示:">
 <!ENTITY quickproxy.style.icona "高亮方形(預設)">
 <!ENTITY quickproxy.style.iconb "暗淡方形">
 <!ENTITY quickproxy.style.iconc "暗淡圓形(舊式)">
+<!ENTITY quickproxy.network.prefs "開啟瀏覽器代理伺服器設定">

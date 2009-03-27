@@ -1,17 +1,16 @@
-overlay	chrome://browser/content/browser.xul	   	chrome://quickproxy/content/quickproxyOverlay.xul
-content	quickproxy						   		   		jar:chrome/quickproxy.jar!/content/
-skin	quickproxy	classic/1.0		   				   	jar:chrome/quickproxy.jar!/skin/
-style	chrome://global/content/customizeToolbar.xul	   chrome://quickproxy/skin/quickproxy.css
-locale	quickproxy	en-US		   			   			jar:chrome/quickproxy.jar!/locale/en-US/
+content  quickproxy             jar:chrome/quickproxy.jar!/content/
+skin     quickproxy classic/1.0 jar:chrome/quickproxy.jar!/skin/
 
-locale	quickproxy	ar		   			   			   jar:chrome/quickproxy.jar!/locale/ar/
-locale	quickproxy	cs-CZ					      			jar:chrome/quickproxy.jar!/locale/cs-CZ/
-locale	quickproxy	de-DE					   	   		jar:chrome/quickproxy.jar!/locale/de-DE/
-locale	quickproxy	fr-FR					   		   	jar:chrome/quickproxy.jar!/locale/fr-FR/
-locale	quickproxy	ja-JP					   			   jar:chrome/quickproxy.jar!/locale/ja-JP/
-locale	quickproxy	pl-PL 			   					jar:chrome/quickproxy.jar!/locale/pl-PL/
-locale	quickproxy	pt-BR 			   					jar:chrome/quickproxy.jar!/locale/pt-BR/
-locale	quickproxy	tr-TR 				   				jar:chrome/quickproxy.jar!/locale/tr-TR/
-locale	quickproxy	uk-UU 				   				jar:chrome/quickproxy.jar!/locale/uk-UA/
-locale	quickproxy	zh-CN 			   					jar:chrome/quickproxy.jar!/locale/zh-CN/
-locale	quickproxy	zh-TW 			   					jar:chrome/quickproxy.jar!/locale/zh-TW/
+overlay  chrome://browser/content/browser.xul         chrome://quickproxy/content/quickproxyOverlay.xul
+style	   chrome://global/content/customizeToolbar.xul chrome://quickproxy/skin/quickproxy.css
+
+locale quickproxy en-US jar:chrome/quickproxy.jar!/locale/en-US/
+
+locale quickproxy cs-CZ jar:chrome/quickproxy.jar!/locale/cs-CZ/
+locale quickproxy de-DE jar:chrome/quickproxy.jar!/locale/de-DE/
+locale quickproxy fr-FR jar:chrome/quickproxy.jar!/locale/fr-FR/
+locale quickproxy nl-NL jar:chrome/quickproxy.jar!/locale/nl-NL/
+locale quickproxy pl-PL jar:chrome/quickproxy.jar!/locale/pl-PL/
+locale quickproxy pt-BR jar:chrome/quickproxy.jar!/locale/pt-BR/
+locale quickproxy zh-CN jar:chrome/quickproxy.jar!/locale/zh-CN/
+locale quickproxy zh-TW jar:chrome/quickproxy.jar!/locale/zh-TW/

@@ -1,0 +1,14 @@
+<!ENTITY quickproxy.prefs.title "QuickProxy — Настройки">
+<!ENTITY quickproxy.caption.type "Выберите тип прокси:">
+<!ENTITY quickproxy.type.manual "Ручная настройка прокси">
+<!ENTITY quickproxy.type.auto "Автоматическая настройка (URL)">
+<!ENTITY quickproxy.type.detect "Автоопределение настроек прокси">
+<!ENTITY quickproxy.caption.behaviour "Поведение прокси при запуске браузера:">
+<!ENTITY quickproxy.behaviour.nothing "Оставлять предыдущие настройки">
+<!ENTITY quickproxy.behaviour.autooff "Автоматически отключать прокси">
+<!ENTITY quickproxy.behaviour.autoon "Автоматически включать прокси">
+<!ENTITY quickproxy.caption.style "Выберите значок:">
+<!ENTITY quickproxy.style.icona "Яркий квадрат (по умолчанию)">
+<!ENTITY quickproxy.style.iconb "Тусклый квадрат">
+<!ENTITY quickproxy.style.iconc "Тусклый круг (старая)">
+<!ENTITY quickproxy.network.prefs "Открыть настройки прокси в браузере">

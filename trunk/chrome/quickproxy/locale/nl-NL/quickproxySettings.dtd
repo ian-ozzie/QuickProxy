@@ -1,0 +1,14 @@
+<!ENTITY quickproxy.prefs.title "QuickProxy voorkeuren">
+<!ENTITY quickproxy.caption.type "Selecteer het proxytype:">
+<!ENTITY quickproxy.type.manual "Handmatige proxyconfiguratie">
+<!ENTITY quickproxy.type.auto "Automatische configuratie (URL)">
+<!ENTITY quickproxy.type.detect "Proxyinstellingen automatisch detecteren">
+<!ENTITY quickproxy.caption.behaviour "Proxygedrag bij starten browser:">
+<!ENTITY quickproxy.behaviour.nothing "Eerdere instellingen handhaven">
+<!ENTITY quickproxy.behaviour.autooff "Proxy automatisch uitschakelen">
+<!ENTITY quickproxy.behaviour.autoon "Proxy automatisch inschakelen">
+<!ENTITY quickproxy.caption.style "Selecteer de pictogrammenset:">
+<!ENTITY quickproxy.style.icona "Helder vierkant (standaard)">
+<!ENTITY quickproxy.style.iconb "Mat vierkant">
+<!ENTITY quickproxy.style.iconc "Mat rond (oud)">
+<!ENTITY quickproxy.network.prefs "Proxyinstellingen browser openen">
