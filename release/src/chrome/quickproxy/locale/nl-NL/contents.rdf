@@ -2,16 +2,16 @@
 <RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:chrome="http://www.mozilla.org/rdf/chrome#">
    <!-- list all the packages being supplied by this jar -->
    <RDF:Seq about="urn:mozilla:locale:root">
-      <RDF:li resource="urn:mozilla:locale:en-US"/>
+      <RDF:li resource="urn:mozilla:locale:nl-NL"/>
    </RDF:Seq>
    <!-- locale information -->
-   <RDF:Description about="urn:mozilla:locale:en-US"
-        chrome:displayName="English (US)"
-        chrome:author="Ozzie"
-        chrome:name="en-US">
+   <RDF:Description about="urn:mozilla:locale:nl-NL"
+        chrome:displayName="Nederlands (nl-NL)"
+        chrome:author="markh"
+        chrome:name="nl-NL">
       <chrome:packages>
-         <RDF:Seq about="urn:mozilla:locale:en-US:packages">
-            <RDF:li resource="urn:mozilla:locale:en-US:quickproxy"/>
+         <RDF:Seq about="urn:mozilla:locale:nl-NL:packages">
+            <RDF:li resource="urn:mozilla:locale:nl-NL:quickproxy"/>
          </RDF:Seq>
       </chrome:packages>
    </RDF:Description>

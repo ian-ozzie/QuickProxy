@@ -4,9 +4,8 @@
 <overlay id="quickproxyOverlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
    <script type="application/x-javascript" src="chrome://quickproxy/content/quickproxyFunctions.js"/>
    <script language="JavaScript">
-      try{window.addEventListener("load", QuickProxy_Init, false);}catch(e){}
-      try{window.addEventListener("unload", QuickProxy_Exit, false);}catch(e){}
-      try{window.addEventListener("focus", QuickProxy_UpdateUITimeout, false);}catch(e){}
+      window.addEventListener("load", function() { QuickProxy.onLoad(); }, false);
+      window.addEventListener("focus", function() { QuickProxy.updateIcon(); }, false);
    </script>
    <!-- Firefox Statusbar Element -->
    <statusbar id="status-bar" class="chromeclass-status">
@@ -15,7 +14,7 @@
             id="quickproxy-status"
             label="QuickProxy"
             class="quickproxy-status-off"
-            onclick="QuickProxy_Click(event);" />
+            onclick="QuickProxy.click(event);" />
       </statusbarpanel>
    </statusbar>
 </overlay>

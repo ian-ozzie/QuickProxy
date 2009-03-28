@@ -5,8 +5,8 @@
 <dialog xmlns:html="http://www.w3.org/1999/xhtml"
         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-        onload="QuickProxy_InitPrefs(document.getElementById('quickproxy_type'),document.getElementById('quickproxy_behaviour'),document.getElementById('quickproxy_skin'))"
-        ondialogaccept="QuickProxy_SavePrefs(document.getElementById('quickproxy_type'),document.getElementById('quickproxy_behaviour'),document.getElementById('quickproxy_skin'))"
+        onload="QuickProxy.prefsOpenInit(document.getElementById('quickproxy_type'),document.getElementById('quickproxy_behaviour'),document.getElementById('quickproxy_skin'))"
+        ondialogaccept="QuickProxy.prefsSave(document.getElementById('quickproxy_type'),document.getElementById('quickproxy_behaviour'),document.getElementById('quickproxy_skin'))"
         title="&quickproxy.prefs.title;">
 		
    <html:script language="javascript" src="chrome://quickproxy/content/quickproxyFunctions.js" />
@@ -17,7 +17,7 @@
          <radio value="2" label="&quickproxy.type.auto;" />
          <radio value="4" label="&quickproxy.type.detect;" />
       </radiogroup>
-      <button label="&quickproxy.network.prefs;" oncommand="QuickProxy_OpenProxyPrefs(); return false;"/>
+      <button label="&quickproxy.network.prefs;" oncommand="QuickProxy.prefsOpenBrowser(); return false;"/>
    </groupbox>
    <groupbox>
       <caption label="&quickproxy.caption.behaviour;" /> 

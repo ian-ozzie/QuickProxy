@@ -1,0 +1,14 @@
+<!ENTITY quickproxy.prefs.title "Nastavení QuickProxy">
+<!ENTITY quickproxy.caption.type "Zvolte typ proxy:">
+<!ENTITY quickproxy.type.manual "Ruční nastavení">
+<!ENTITY quickproxy.type.auto "Automatické nastavení (URL)">
+<!ENTITY quickproxy.type.detect "Auto-detekce nastavení">
+<!ENTITY quickproxy.caption.behaviour "Chování při spuštění prohlížeče:">
+<!ENTITY quickproxy.behaviour.nothing "Ponechat jak bylo naposledy nastaveno">
+<!ENTITY quickproxy.behaviour.autooff "Automaticky vypnout proxy">
+<!ENTITY quickproxy.behaviour.autoon "Automaticky zapnout proxy">
+<!ENTITY quickproxy.caption.style "Zvolte ikony">
+<!ENTITY quickproxy.style.icona "Světlé čtvercové (výchozí)">
+<!ENTITY quickproxy.style.iconb "Tlumené čtvercové">
+<!ENTITY quickproxy.style.iconc "Tlumené oblé (staré)">
+<!ENTITY quickproxy.network.prefs "Otevřít nastavení proxy prohlížeče">

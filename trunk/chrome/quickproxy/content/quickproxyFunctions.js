@@ -47,12 +47,6 @@ var QuickProxy = {
       }
    },
    
-   // Called on browser focus
-   onFocus : function() {
-      // Delay icon update by 50ms
-      window.setTimeout("QuickProxy.updateIcon()", 50);
-   },
-
    // Update the icon on the status bar
    updateIcon : function() {
       // Get proxy status
@@ -262,6 +256,3 @@ var QuickProxy = {
       }
    }
 };
-
-window.addEventListener("load", function() { QuickProxy.onLoad(); }, false);
-window.addEventListener("focus", function() { QuickProxy.onFocus(); }, false);

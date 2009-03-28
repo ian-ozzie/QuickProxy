@@ -5,7 +5,7 @@
    <script type="application/x-javascript" src="chrome://quickproxy/content/quickproxyFunctions.js"/>
    <script language="JavaScript">
       window.addEventListener("load", function() { QuickProxy.onLoad(); }, false);
-      window.addEventListener("focus", function() { QuickProxy.onFocus(); }, false);
+      window.addEventListener("focus", function() { QuickProxy.updateIcon(); }, false);
    </script>
    <!-- Firefox Statusbar Element -->
    <statusbar id="status-bar" class="chromeclass-status">
