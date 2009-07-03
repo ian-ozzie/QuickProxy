@@ -17,7 +17,6 @@
          <radio value="2" label="&quickproxy.type.auto;" />
          <radio value="4" label="&quickproxy.type.detect;" />
       </radiogroup>
-      <button label="&quickproxy.network.prefs;" oncommand="QuickProxy.prefsOpenBrowser(); return false;"/>
    </groupbox>
    <groupbox>
       <caption label="&quickproxy.caption.behaviour;" /> 

@@ -15,9 +15,6 @@ echo ---
 echo Copying required files:
 copy ..\release\src\*.* tmp\
 echo ---
-echo Removing previous build
-del /Q ..\release\xpi\*.xpi
-echo ---
 FOR /F "TOKENS=1* DELIMS= " %%A IN ('DATE/T') DO SET CDATE=%%B
 FOR /F "TOKENS=1,2 eol=/ DELIMS=/ " %%A IN ('DATE/T') DO SET dd=%%B
 FOR /F "TOKENS=1,2 DELIMS=/ eol=/" %%A IN ('echo %CDATE%') DO SET mm=%%B
