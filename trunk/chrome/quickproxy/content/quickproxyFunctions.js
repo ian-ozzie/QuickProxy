@@ -10,8 +10,6 @@ var QuickProxy = {
    onLoad : function() {
       // Check preferences, ensures they exist
       this.prefsInit();
-      // Update icon to reflect current status
-      this.updateIcon();
 
       // Init Lang vars
       this.lang_prefs_title = this.langStrings.GetStringFromName("quickproxy_prefs_title");
@@ -45,6 +43,9 @@ var QuickProxy = {
             this.prefsCom.setIntPref("network.proxy.type", proxyType);
          }
       }
+
+      // Update icon to reflect current status
+      this.updateIcon();
    },
    
    // Update the icon on the status bar
